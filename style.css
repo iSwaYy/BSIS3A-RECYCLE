@@ -1,0 +1,42 @@
+body {
+  display: flex;
+  background-image: url('bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center; /* Added for vertical alignment */
+  text-align: center;
+}
+
+/*navigation button sa babaw*/
+.navbar {
+  background-color: #568203;
+  color: white;
+  padding: 1px 1px; 
+  font-size: 10px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.navbar ul li {
+  display: inline-block; /* Display the list items horizontally */
+  margin-right: 10px;    /* Add spacing between items */
+  position: relative;    /* Add positioning for borders */
+}
+
+.navbar ul li:not(:last-child):after {
+    content: '';
+    position: absolute;
+    top: 50%; /* Adjust the vertical position of the line */
+    right: -5px;  
+    width: 1px; /* Width of the line */
+    height: 10px; /* Height of the line */
+    background-color: white; /* Color of the line */
+    transform: translateY(-50%); /* Center the line vertically */
+}
