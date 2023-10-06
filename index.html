@@ -11,18 +11,22 @@
 
   
 <body>
-  <nav class="navbar">
-    <ul>
-        <li>Home Page </a></li>
-        <li>About </a></li>
-        <li>Products </a></li>
-        <li>Blogs </a></li>
-        <li>Events </a></li>
-        <li>Contacts </a></li>
-    </ul>
-</nav>
+ 
+  <div class="login-container"> 
+      <label for="uname"><b>Email</b></label> 
+      <input id="unametext" type="text" placeholder="Enter Email" name="email" required> 
+      <label for="psw"><b>Password</b></label> 
+      <div><input id="pswtext" type="password" placeholder="Enter Password" name="psw" required></div> 
 
-  
+      <button class="btn" type="submit" onclick="">Login</button> 
+      <button class="btn" type="submit" onclick="">Register</button> 
+      <label> 
+          <input id="rememberme" type="checkbox" checked="checked" name="remember"> Remember me 
+      </label> 
+      <button id="forgotBtn" type="button" onclick=""> 
+          <span>Forgot password?</span> 
+      </button> 
+  </div>
 </body>
 
-</html> 
+</html>
