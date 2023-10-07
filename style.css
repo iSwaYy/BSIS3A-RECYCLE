@@ -15,14 +15,13 @@ body {
 
 /*navigation button sa babaw*/
 .navbar {
-  background-color: #568203;
   color: white;
   padding: 1px 1px; 
-  font-size: 10px;
+  font-size: 15px;
   position: fixed;
   top: 0;
   right: 0;
-  left: 0;
+  left: 10;
 }
 
 .navbar ul li {
